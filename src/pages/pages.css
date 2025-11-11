@@ -1,0 +1,400 @@
+.home{
+    min-height: 90vh;
+    width: 100% ;
+}
+.login{
+    min-height: 90vh;
+    width: 100%;
+}
+.login form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 229, 255, 0.439);
+    margin: auto;
+    width: 600px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    transition: all 1s;
+}
+.login form:hover{
+     border: 1px solid rgba(0, 229, 255, 0.645);
+     box-shadow: 1px 2px 1px rgba(0, 229, 255, 0.645) ;
+     background-color: #636a6300;
+}
+.login form h2{
+    padding: 10px;
+    font-size: 3rem;
+    color:rgb(0, 229, 255);
+}
+.login form input{
+    padding: 5px;
+    font-size: 1.2rem;
+    border: 1px solid rgba(0, 229, 255, 0.645);
+    color: rgb(0, 229, 255);
+    background-color: #00000067;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    outline-color: rgb(0, 229, 255);
+}
+.login form button{
+    padding: 5px 20px;
+    font-size: 1.5rem;
+    border:none ;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: rgba(0, 229, 255, 0.645);
+    transition: all 1s ;
+}
+.login form button:hover{
+    background-color: rgb(0, 229, 255);
+    padding: 5px 25px;
+}
+.login form p{
+  font-size: 1.3rem !important;
+  color: whitesmoke;
+}
+.login form p a{
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #00ddff;
+}
+.login form  a{
+  text-decoration: dashed !important;
+  margin-top: 10px;
+  font-size: 1.3rem;
+  color: #00ddff;
+  transition: 1s all;
+}
+.login form a:hover{
+    color: rgb(0, 170, 255);
+}
+ 
+.addTask .container{
+    margin-bottom: 50px !important;
+}
+.addTask .container h2{
+    color: white;
+    
+}
+
+
+/* about page ; */
+.about{
+    justify-content: center;
+    align-items: center !important;
+}
+.about .card{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(197deg, #000000, #0303ff, #000000) ;
+    flex-direction: column ;
+    color: white;
+    margin-left: 30%;
+    margin: 20px 0 20px 30%;
+    width: 600px;
+    border-radius: 20px;
+    border-top-right-radius: 30%;
+
+}
+.about .card img{
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+
+/* contact and services pages */
+.page-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  color: #00beff;
+  margin-bottom: 10px;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.service-card {
+  background: linear-gradient(180deg , #ffffff , #0303ff);
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: whitesmoke;
+  background: #00000038;
+  outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #1e90ff;
+}
+
+.contact-form button {
+  background: #1e90ff;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #0b68c1;
+}
+
+
+
+/* todos after loged in */
+
+/* 🌈 Container Styling */
+.todos {
+  background: linear-gradient(135deg, #0000008c, #397bd891);
+  padding: 50px 20px;
+  border-radius: 10px;
+}
+
+/* 📝 Heading Styling */
+.todos h2 {
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgb(255 255 255);
+  margin-bottom: 40px;
+}
+
+/* 🧾 Card Styling */
+.todos .card {
+  position: relative;
+  height: 320px !important; /* Fixed height */
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.todos .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* ✍️ Card body content scrollable */
+.todos .card-body {
+  flex: 1;
+  overflow-y: auto;
+  height: 200px !important;
+  padding: 15px;
+  padding-bottom: 70px; /* Reserve space for buttons */
+  background: linear-gradient(135deg, #000000, #001964cf);
+
+}
+.todos .card-body h5{
+  font-size: 2rem;
+  color: #00ddff !important;
+}
+.todos .card-body p{
+  font-size: 1rem;
+  color: whitesmoke !important;
+}
+.todos .card-body span{
+  margin-bottom: 10px !important;
+}
+/* Hide scrollbar for a clean look */
+.todos .card-body::-webkit-scrollbar {
+  width: 6px;
+}
+.todos .card-body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+/* ✅ Fixed buttons at bottom */
+.todos .card .d-flex {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: space-between;
+  background: #000000;
+  padding-bottom: 10px;
+  margin: 0 -5px -10px -10px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+}
+
+/* Buttons look better */
+.todos .btn-sm {
+  font-size: 1.1rem;
+  padding: 5px;
+  margin: 5px;
+  color: white !important;
+  border-radius: 8px;
+  background-color: transparent;
+  transition: transform 0.2s ease;
+}
+
+.todos .btn-sm:hover {
+  transform: scale(1.05);
+  background-color: transparent;
+}
+
+
+
+/* add task page */
+.addTask h2{
+  font-size: 3rem;
+}
+.addTask form{
+  background: linear-gradient(145deg,black,#ff000085,black);
+}
+.addTask form input,.addTask form textarea {
+  background: transparent;
+  font-size: 1.2rem;
+  color: white !important;
+  border: 1px solid blue;
+}
+.addTask form input:focus,
+.addTask form textarea:focus {
+  border-color: #1e90ff;
+  background: transparent;
+}
+.addTask form label{
+  color: #1e90ff;
+  font-size: 1.3rem;
+}
+.addTask form input::placeholder,
+.addTask form textarea::placeholder{
+  color: rgba(171, 166, 166, 0.657) !important;
+}
+
+/* Forgot Password */
+.forgot-password{
+    min-height: 90vh;
+    width: 100%;
+}
+.forgot-password h2{
+  color: white;
+  font-size: 2.5rem;
+}
+.forgot-password form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    background: transparent;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 229, 255, 0.439);
+    margin: auto;
+    width: 600px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    transition: all 1s;
+}
+.forgot-password form:hover{
+     border: 1px solid rgba(0, 229, 255, 0.645);
+     box-shadow: 1px 2px 1px rgba(0, 229, 255, 0.645) ;
+     background-color: #636a6300;
+}
+.forgot-password form h2{
+    padding: 10px;
+    font-size: 3rem;
+    color:rgb(0, 229, 255);
+}
+.forgot-password form input{
+      background: transparent;
+      font-size: 1.2rem;
+      color: rgb(0, 229, 255) !important;
+      border: 1px solid rgb(0, 191, 255);
+}
+.forgot-password form input:focus{
+  border-color: rgb(0, 229, 255);
+  background: transparent;
+}
+.forgot-password form label{
+  margin-right: auto;
+  color: rgb(0, 229, 255);
+  font-size: 1.3rem;
+}
+.forgot-password form button{
+    padding: 5px 20px;
+    font-size: 1.5rem;
+    color: white;
+    border:none ;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: rgba(0, 229, 255, 0.645);
+    transition: all 1s ;
+}
+.forgot-password form button:hover{
+    background-color: rgb(0, 229, 255);
+    padding: 5px 25px;
+}
+.forgot-password form p{
+  font-size: 1.3rem !important;
+  color: whitesmoke;
+}
+.forgot-password form p a{
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #00ddff;
+}
+.forgot-password form  a{
+  text-decoration: dashed !important;
+  margin-top: 10px;
+  font-size: 1.3rem;
+  color: #00ddff;
+  transition: 1s all;
+}
+.forgot-password form a:hover{
+    color: rgb(0, 170, 255);
+}
+.forgot-password form input::placeholder{
+  color: rgba(171, 166, 166, 0.657) !important;
+}
